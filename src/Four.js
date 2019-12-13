@@ -54,6 +54,10 @@ class Four extends Component {
     );
   };
 
+  /**
+   * @event Native coming from ScrollView
+   */
+
   handleHeader = event => {
     if (event.nativeEvent.contentOffset.y > 0 && !this.state.open) {
       this.setState({open: !this.state.open});
@@ -61,7 +65,9 @@ class Four extends Component {
       this.setState({open: !this.state.open});
     }
   };
-
+  /**
+   * actually not handling anim only creating shadow
+   */
   handleAnim = () => {
     if (this.state.open) {
       const style = {
