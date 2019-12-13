@@ -12,7 +12,7 @@ class First extends Component {
             open: false,
         };
         this.plus = new Animated.Value(0),
-            this.increment = new Animated.Value(0);
+        this.increment = new Animated.Value(0);
         this.decrementAnim = new Animated.Value(0);
     }
 
